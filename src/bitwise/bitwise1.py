@@ -10,5 +10,5 @@ def get_bitwise(words: str) -> int:
 if __name__ == "__main__":
     words = ["abcd", "efj"]
     
-    print(bin(get_bitwise(words[0])))
-    print(bin(get_bitwise(words[1])))
+    print(bin(get_bitwise(words[0]))) # 0b1111
+    print(bin(get_bitwise(words[1]))) # 0b1000110000
