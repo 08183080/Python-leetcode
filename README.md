@@ -30,3 +30,4 @@
 就当操练基本熟练度了，就当娱乐益智
 ## 2024
 - [x] 2/11, 大年初二, 晚上客厅无聊手写【最简单的有序数组二分查找获取数据下标函数】, 二分最最基础的模版!
+- [x] 2/1, github上有个整理十大排序的网站: https://github.com/hustcc/JS-Sorting-Algorithm/tree/master
