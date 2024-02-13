@@ -1,9 +1,9 @@
 from typing import List
 
-nums = [1, 33, 2, 24, 8, 99, 100, 1, 2]
+nums = [1, 33, 2, 24, 8, 99, 100, 1, 2, 1]
 
 def merge_sort(nums: List[int]):
-    if len(nums) < 2:
+    if len(nums) == 1:
         return nums
     middle = len(nums) // 2
     left, right = nums[0: middle], nums[middle:]
