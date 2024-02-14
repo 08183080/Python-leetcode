@@ -16,13 +16,11 @@ def heap_sort(nums: List[int]):
     n = len(nums)
 
     for i in range(n // 2 - 1, -1, -1):
-        h = heapify(nums, n, i)
-        print(f'[*] build heaps {i}: {h}')
+        h = heapify(nums, n, i) # build max-heap successfully!
 
     for i in range(n - 1, 0, -1):
         nums[0], nums[i] = nums[i], nums[0]
-        hh = heapify(nums, i, 0)
-        print(f'[*] finally heap {i}: {hh}')
+        heapify(nums, i, 0)
     return nums
 
 def heapify(nums, n, i):
@@ -31,7 +29,7 @@ def heapify(nums, n, i):
     r = l + 1
     if l < n and nums[i] < nums[l]:
         max = l
-    if r < n and nums[i] < nums[r]:
+    if r < n and nums[max] < nums[r]:
         max = r
     if max != i:
         nums[i], nums[max] = nums[max], nums[i]
@@ -39,7 +37,5 @@ def heapify(nums, n, i):
     return nums
 
 if __name__ == "__main__":
-    # res = heap_sort_stl(nums=nums)
-    # print('[*] become max heap: ', res)
     res = heap_sort(nums=nums)
     print('[*] after heap sort: ', res)
