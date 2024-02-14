@@ -2,6 +2,13 @@ import heapq
 import random
 from typing import List
 
+"""
+Steps:
+(1) build max-heap, use heapify()
+(2) on maxheap, swap and heapify to get sorted array!
+Refs:
+https://www.programiz.com/dsa/heap-sort
+"""
 nums = [random.randint(0, 100) for i in range(10)]
 print('[*] original nums array: ', nums)
 
