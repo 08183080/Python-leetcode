@@ -9,5 +9,13 @@ nums = [random.randint(0, 100) for i in range(10)] # an array, len = 10, value =
 print('[*] original nums array:', nums)
 
 def radix_sort(nums: List[int]):
-    n = len(nums)
+    max_digit = 0
+    max_value = max(nums)
+
     
+
+
+
+if __name__ == "__main__":
+    nums = radix_sort(nums=nums)
+    print('[*] finally sorted array: ', nums)
