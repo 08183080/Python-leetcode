@@ -22,7 +22,7 @@ def count_sort(num: List[int], place: int):
         count[index % 10] += 1
     print(f'{place}\t: {count}')
     
-    # why calculate cumulative count?
+    # why calculate cumulative count? to get pos
     for i in range(1, 10):
         count[i] += count[i - 1]
     print(f'{place} added\t: {count}')
