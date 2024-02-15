@@ -33,9 +33,11 @@ def count_sort(num: List[int], place: int):
         output[count[index % 10] - 1] = nums[i]
         count[index % 10] -= 1
         i -= 1
+    print(f'final count: {count}')
     
     for i in range(0, size):
         nums[i] = output[i]
+    print(f'{nums}')
 
 def radix_sort(nums: List[int]):
     max_value = max(nums) # get max value
